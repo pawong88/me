@@ -1,5 +1,5 @@
 """
-Module for smoke detection
+Module for fire detection
 Author: Thaweewat Rugsujarit
 """
 from roboflow import Roboflow
