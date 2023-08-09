@@ -20,6 +20,9 @@ def checkSysPathAndAppend(path, stepBack = 0):
 
 folderFile, filename = os.path.split(os.path.realpath(__file__))
 
+# Make folders at root directory
+MODELS_DIR = Path(PARENT_DIR, "models")
+MODELS_DIR.mkdir(parents=True, exist_ok=True)
 FOLDER_PROJECT = checkSysPathAndAppend(folderFile, 2)
 
 FOLDER_IMAGE = os.path.join(FOLDER_PROJECT, 'Images', 'RemoteOCR_01_test')
